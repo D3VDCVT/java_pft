@@ -1,9 +1,10 @@
 public class Point {
+
     public int x1;
     public int y1;
-
     public int x2;
     public int y2;
+
     public Point(int x1, int y1, int x2, int y2) {
         this.x1 = x1;
         this.y1 = y1;
@@ -24,7 +25,7 @@ public class Point {
     }
 
     public double result () {
-        return Math.sqrt(deltaSum());
+        return Math.sqrt(Math.pow(deltaX(),2) + (Math.pow(deltaY(),2)));
     }
 
 }
